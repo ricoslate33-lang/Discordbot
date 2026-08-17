@@ -1,0 +1,23 @@
+{
+  "name": "discordbot",
+  "version": "0.1.0",
+  "description": "Multi-feature Discord bot (AI Chat + Akinator + Moderation) using discord.js v14 and Google Gemini",
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "deploy": "node deploy-commands.js",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.11.0",
+    "@google/generative-ai": "^1.0.0",
+    "better-sqlite3": "^8.3.0",
+    "dotenv": "^16.0.0",
+    "node-fetch": "^3.3.0"
+  },
+  "license": "MIT"
+}
